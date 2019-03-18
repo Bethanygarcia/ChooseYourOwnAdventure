@@ -1,3 +1,4 @@
+
 // NOTE - You must have a level with the name "start".  This is used as the first level in the game.
 
 var game = {
@@ -6,33 +7,48 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "Its another heavy rain kind of day and you pick up your son Shawn from after school.",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Go straight home.",
+                    nextLevel: "home",
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "Offer to go to the park.",
+                    nextLevel: "park",
                 },
             ]
         },
 
-        cave: {
+        home: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "You arrive home and there is mail all over the place again.",
             choices: [
                 {
-                    text: "Start over",
-                    nextLevel: "start",
+                    text: "Go through the mail.",
+                    nextLevel: "news",
+                },
+                {
+                    text: "Make Shawn something to eat and help him with his homework.",
+                    nextLevel: "bedroom",
                 },
             ]
         },
-
-        field: {
+        news: {
+          message: "You are going through your meal and there is a newsletter that reads, 'Origami Killer Strikes Again!' ",
+          choices: [
+              {
+                text: "I don't think I have to worry about that.",
+                nextLevel: "gone",
+              },
+              {
+                  
+              },
+              ]
+        },
+        park: {
             message: "Some adventurer you are...",
             choices: [
                 {
